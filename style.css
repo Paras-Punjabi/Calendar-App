@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#f9f5f0;
+}
+
+.calender {
+  width: 60% !important;
+  padding: 0px;
+  background-color: rgb(208 ,212 ,218);
+  padding: 10px;
+  border-radius: 20px;
+  border: none !important;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.header,
+.calendarBody {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: monospace;
+  margin: auto;
+  font-size: 27px;
+}
+
+.header {
+  background-color: rgb(255, 253, 240);
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
+}
+.calendarBody {
+  flex-direction: column;
+}
+
+.header i {
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.header i:hover{
+  transform: scale(1.2);
+  color: rgb(136, 12, 12);
+}
+
+.daysDiv {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  font-size: 30px;
+}
+
+.datesDiv {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 10px 85px;
+  align-content: center;
+}
+
+.datesDiv .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.date:not(.active):not(.activeColor):hover{
+  background-color: rgb(66, 69, 76);
+  color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Baloo Bhai 2', cursive;
+  letter-spacing: 5px;
+  font-size: 50px;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.btn {
+  float: right !important;
+  margin-top: 20px;
+}
+
+.monthAndYear{
+  padding: 5px;
+  background-color: rgb(230, 230, 194);
+  border-radius: 10px;
+  font-weight: bolder;
+  animation: toggle 1s infinite normal ;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+@keyframes toggle {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.active{
+  background-color: #19668a;
+  color: white;
+}
+
+.blur{
+  opacity: 0.7;
+}
+
+.clock{
+  height: auto;
+  width: 33%;
+  padding: 5px;
+  border-radius:10px ;
+  margin-top: 16px;
+  font-size: 35px;
+  background-color:rgb(255,253,240);
+}
+.clock  span{
+  font-family: 'Orbitron', sans-serif;
+}
+
+.activeColor{
+  border: 3px solid #7a1d05;
+}
+
+.eventDesciption{
+  height: 10rem !important;
+  resize: none !important;
+}
+
+#inputDate{
+  text-align: center;
+  font-size: 30px;
+  font-family: monospace;
+  letter-spacing: 2px;
+}
+
+#allEventsContainer{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(auto,1fr);
+}
+.fa-trash-alt{
+  cursor: pointer;
+}
+.fa-trash-alt:hover{
+  color: red;
+  transform: scale(1.5);
+}
