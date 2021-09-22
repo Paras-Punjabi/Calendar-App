@@ -5,7 +5,8 @@ body {
 }
 
 .calender {
-  width: 60% !important;
+  width: auto;
+  max-width: 75%;
   padding: 0px;
   background-color: rgb(208 ,212 ,218);
   padding: 10px;
@@ -58,7 +59,6 @@ body {
   margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
   width: 100%;
   justify-content: space-evenly;
   gap: 10px 85px;
@@ -90,8 +90,7 @@ h1 {
 }
 
 .btn {
-  float: right !important;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .monthAndYear{
@@ -126,12 +125,15 @@ h1 {
 
 .clock{
   height: auto;
-  width: 33%;
+  width: 28%;
   padding: 5px;
   border-radius:10px ;
-  margin-top: 16px;
+  margin-top: 10px;
   font-size: 35px;
   background-color:rgb(255,253,240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .clock  span{
   font-family: 'Orbitron', sans-serif;
@@ -164,4 +166,14 @@ h1 {
 .fa-trash-alt:hover{
   color: red;
   transform: scale(1.5);
+}
+
+.footer{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons .btn{
+  margin: 0px 5px;
 }

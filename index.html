@@ -29,8 +29,8 @@
     href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
     rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/responsive.css"/>
     <title>CALENDAR</title>
   </head>
   <body>
@@ -42,8 +42,8 @@
           <div class="header">
             <i title="Back" id="leftKey" class="fas fa-arrow-left"></i>
             <div id="monthHeading" class="monthAndYear" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <span id="monthElement" class="month">SEPTEMBER</span>
-              <span id="yearElement" class="year">2021</span>
+              <span id="monthElement" class="month"></span>
+              <span id="yearElement" class="year"></span>
             </div>
             <i id="rightKey" title="Forward" class="fas fa-arrow-right"></i>
           </div>
@@ -56,16 +56,20 @@
               ><span class="days">Fri</span><span class="days">Sat</span>
             </div>
             <div id="datesDiv" class="datesDiv"></div>
-          </div>
-          <button id="todayBtn" class="btn btn-success btn-lg">Today</button>
-          <button id="addBtn" data-bs-toggle="modal" data-bs-target="#creatingAnEvent" class="btn btn-success btn-lg mx-2">Add an Event</button>
-          <button id="seeAllBtn" data-bs-toggle="modal" data-bs-target="#seeAllEvents" class="btn btn-success btn-lg">See All Events</button>
-          <div id="clock" class="clock">
-            <span id="hours"></span>:<span id="minutes"></span>:<span
-              id="seconds"
-            ></span>
-            <span id="meredian"></span>
-          </div>
+          </div >
+          <div class="footer">
+            <div id="clock" class="clock">
+              <span id="hours"></span>:<span id="minutes"></span>:<span
+                id="seconds"
+              ></span>
+              <span id="meredian"></span>
+            </div>
+            <div class="buttons">
+              <button id="seeAllBtn" data-bs-toggle="modal" data-bs-target="#seeAllEvents" class="btn btn-success btn-lg">See All Events</button>
+              <button id="todayBtn" class="btn btn-success btn-lg">Today</button>
+              <button id="addBtn" data-bs-toggle="modal" data-bs-target="#creatingAnEvent" class="btn btn-success btn-lg ">Add an Event</button>
+            </div>
+            </div>
         </div>
       </div>
 

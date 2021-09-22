@@ -1,0 +1,174 @@
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .datesDiv {
+    gap: 1% 9%;
+  }
+  .daysDiv {
+    justify-content: space-between;
+  }
+  .clock {
+    font-size: 25px;
+    width: 29%;
+  }
+}
+
+@media screen and (max-width: 999px) and (min-width: 875px) {
+  .datesDiv {
+    gap: 1% 7%;
+  }
+  .daysDiv {
+    justify-content: space-between;
+  }
+  .clock {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  #allEventsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
+  .buttons .btn {
+    margin: 0 1px;
+  }
+}
+
+@media screen and (max-width: 874px) and (min-width: 850px) {
+  .datesDiv {
+    gap: 1% 7%;
+  }
+  .daysDiv {
+    justify-content: space-between;
+  }
+  .clock {
+    margin-top: 10px;
+    font-size: 30px;
+    width: 80%;
+  }
+  .clock span {
+    font-size: 35px;
+    margin: 3px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  #allEventsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
+}
+
+@media screen and (max-width: 849px) and (min-width: 765px) {
+  .date {
+    height: 30px;
+    width: 30px;
+  }
+  .datesDiv {
+    font-size: 20px;
+    gap: 1% 6%;
+  }
+  .daysDiv {
+    font-size: 24px;
+    justify-content: space-between;
+  }
+  .clock {
+    margin-top: 10px;
+    font-size: 30px;
+    width: 80%;
+  }
+  .clock span {
+    font-size: 35px;
+    margin: 3px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .header i {
+    font-size: 25px;
+  }
+  .monthAndYear {
+    font-size: 20px;
+  }
+
+  #allEventsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .date {
+    height: 30px;
+    width: 30px;
+  }
+  .datesDiv {
+    font-size: 20px;
+    gap: 1% 4%;
+  }
+  .daysDiv {
+    font-size: 24px;
+    justify-content: space-between;
+  }
+  .clock {
+    margin-top: 10px;
+    font-size: 30px;
+    width: 80%;
+  }
+  .clock span {
+    font-size: 35px;
+    margin: 3px;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .header i {
+    font-size: 25px;
+  }
+  .monthAndYear {
+    font-size: 20px;
+  }
+
+  #allEventsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons .btn {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 764px) and (orientation: landscape) {
+  .datesDiv {
+    font-size: 20px;
+    gap: 1%;
+  }
+  .daysDiv {
+    font-size: 20px;
+    justify-content: space-between;
+  }
+}
